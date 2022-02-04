@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  width: 100vw;
+  height: 24rem;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-container {
+  background-image: url(img/undraw_coder.svg);
+  background-size: cover;
+  background-position: top;
+  width: 50%;
+  height: 90%;
+}
+
+.right-container {
+  width: 50%;
+  color: #2F2E41;
+}
+
+.right-container h1 {
+  font-family: 'Montserrat', monospace;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.right-container h4 {
+  font-family: 'Montserrat', monospace;
+  font-weight: 600;
+}
+
+.right-container p{
+  font-family: 'Montserrat', monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.right-container a {
+  color: #FFC600;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* .banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+} */
