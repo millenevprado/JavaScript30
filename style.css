@@ -11,7 +11,7 @@ body {
 
 .header {
   width: 100vw;
-  height: 24rem;
+  height: 26rem;
   background-color: #F7F7F7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +73,57 @@ body {
 
 .header .right-container .inner-container .btn-black:hover {
   color: #FFC600;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  -webkit-box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 0.3rem;
+  margin: 1.2rem;
+  width: 18rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 18rem;
+}
+
+ul li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+ul a {
+  color: #2F2E41;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+ul a:hover {
+  color: #FFC600;
+}
+
+ul img {
+  display: block;
+  border-radius: 4px 4px 0 0;
+  height: 200px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  max-width: 100%;
 }
 
 footer {
