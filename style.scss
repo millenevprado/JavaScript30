@@ -11,6 +11,7 @@ body {
 
 .header {
   width: 100vw;
+  max-width: 100%;
   height: 26rem;
   background-color: #F7F7F7;
   display: flex;
@@ -30,7 +31,8 @@ body {
     color: #2F2E41;
 
     .inner-container {
-      padding: 0.3rem 8rem 0.3rem 1.2rem;
+      padding: 0.3rem 1.2rem;
+      max-width: 100%;
 
       h1 {
         font-size: 2.5rem;
@@ -69,12 +71,14 @@ body {
   }
 }
 
-ul {
+#list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   padding: 0;
+  // padding-left: 0 !important;
+  margin: 0;
   text-align: center;
 
   li {
@@ -83,30 +87,35 @@ ul {
     margin: 1.2rem;
     width: 18rem;
     transition: all 0.3s ease;
-    height: 18rem;
-
     &:hover {
       transform: scale(1.05);
     }
-  }
-   a {
-    color: #2F2E41;
-    font-size: 1.1rem;
-    text-decoration: none;
-    &:hover {
-      color: #FFC600;
+
+    a {
+      color: #2F2E41;
+      font-size: 1.1rem;
+      text-decoration: none;
+      &:hover {
+        color: #FFC600;
+      }
+    }
+
+    img {
+      border-radius: 4px 4px 0 0;
+      height: 200px;
+      width: 300px;
+      object-fit: cover;
+      max-width: 100%;
+    }
+
+    div {
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
-  img {
-    display: block;
-    border-radius: 4px 4px 0 0;
-    height: 200px;
-    width: 300px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    max-width: 100%;
-  }
 }
 
 
@@ -132,4 +141,5 @@ footer {
 
 
 // @media screen and (max-width: 600px) {
+
 // }

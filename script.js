@@ -24,16 +24,18 @@ const projects = [
 
 const list = document.getElementById('list');
 
-projects.forEach((project, i) => {
+projects.forEach((project) => {
   const listItem = document.createElement('li');
   const link = document.createElement('a');
+  const div = document.createElement('div');
   link.href = `/${project}/index-FINISHED`;
-  link.innerText = project;
+  div.innerText = project;
 
   const img = document.createElement('img');
   img.src = `/${project}/img.png`
 
   link.prepend(img);
+  link.append(div);
   listItem.appendChild(link);
   list.appendChild(listItem);
 });

@@ -11,6 +11,7 @@ body {
 
 .header {
   width: 100vw;
+  max-width: 100%;
   height: 26rem;
   background-color: #F7F7F7;
   display: -webkit-box;
@@ -37,7 +38,8 @@ body {
 }
 
 .header .right-container .inner-container {
-  padding: 0.3rem 8rem 0.3rem 1.2rem;
+  padding: 0.3rem 1.2rem;
+  max-width: 100%;
 }
 
 .header .right-container .inner-container h1 {
@@ -75,7 +77,7 @@ body {
   color: #FFC600;
 }
 
-ul {
+#list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,10 +88,11 @@ ul {
           justify-content: center;
   list-style-type: none;
   padding: 0;
+  margin: 0;
   text-align: center;
 }
 
-ul li {
+#list li {
   -webkit-box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
   border-radius: 0.3rem;
@@ -97,33 +100,43 @@ ul li {
   width: 18rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  height: 18rem;
 }
 
-ul li:hover {
+#list li:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-ul a {
+#list li a {
   color: #2F2E41;
   font-size: 1.1rem;
   text-decoration: none;
 }
 
-ul a:hover {
+#list li a:hover {
   color: #FFC600;
 }
 
-ul img {
-  display: block;
+#list li img {
   border-radius: 4px 4px 0 0;
   height: 200px;
   width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 10px;
   max-width: 100%;
+}
+
+#list li div {
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
