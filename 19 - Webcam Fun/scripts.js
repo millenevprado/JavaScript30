@@ -28,9 +28,9 @@ const paintToCanvas = () => {
 
     // add the effect we want to add
     // pixels = redEffect(pixels);
-    // pixels = rgbSplit(pixels);
-    pixels = greenScreen(pixels);
-    
+    pixels = rgbSplit(pixels);
+    // pixels = greenScreen(pixels);
+
     // put them back into the canvas
     ctx.putImageData(pixels, 0, 0);
   }, 16);

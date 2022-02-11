@@ -140,6 +140,19 @@ footer {
 }
 
 
-// @media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
+  .left-container {
+    display: none;
+  }
+  .header {
+    justify-content: center;
 
-// }
+    .inner-container {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+
+}
